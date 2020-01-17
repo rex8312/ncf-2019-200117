@@ -1,0 +1,89 @@
+## STDOUT ##
+
+[[92mINFO[0m] SC2 4.9.0 용 패치 적용
+패치 sc2.ids.ability_id
+패치 sc2.game_state
+패치 sc2.bot_ai
+패치 sc2.client
+패치 sc2.controller
+패치 sc2.main
+INFO:sc2.protocol:Client status changed to Status.launched (was None)
+INFO:sc2.protocol:Client status changed to Status.launched (was None)
+INFO:sc2_patch.sc2_patch_490.controller:Creating new game
+INFO:sc2_patch.sc2_patch_490.controller:Map:     NCFellowship-2019_m1_v6
+INFO:sc2_patch.sc2_patch_490.controller:Players: Bot(Race.Terran, <bots.__examples__.nc_example_v6.drop_bot.DropBot object at 0x7fbc410a3198>), Bot(Race.Terran, <bots.poscat.poscat_bot.POSCATBot object at 0x7fbc410ab5c0>)
+INFO:sc2.protocol:Client status changed to Status.init_game (was Status.launched)
+INFO:sc2.protocol:Client status changed to Status.in_game (was None)
+INFO:root:Player 1 - Bot(Race.Terran, <bots.__examples__.nc_example_v6.drop_bot.DropBot object at 0x7fbc410a3198>)
+TEST: 1, <bots.__examples__.nc_example_v6.drop_bot.DropBot object at 0x7fbc410a3198>
+INFO:sc2.protocol:Client status changed to Status.in_game (was None)
+INFO:root:Player 2 - Bot(Race.Terran, <bots.poscat.poscat_bot.POSCATBot object at 0x7fbc410ab5c0>)
+TEST: 2, <bots.poscat.poscat_bot.POSCATBot object at 0x7fbc410ab5c0>
+INFO:sc2.protocol:Client status changed to Status.ended (was Status.in_game)
+INFO:root:Result for player 1 - Bot(Race.Terran, <bots.__examples__.nc_example_v6.drop_bot.DropBot object at 0x7fbc410a3198>): Defeat
+INFO:sc2.protocol:Client status changed to Status.ended (was Status.in_game)
+INFO:root:Result for player 2 - Bot(Race.Terran, <bots.poscat.poscat_bot.POSCATBot object at 0x7fbc410ab5c0>): Victory
+INFO:sc2.client:Saved replay to outs/2020-01-17T11-28-03/replays/drop_bot-poscat/drop_bot-poscat-1.SC2Replay
+INFO:sc2.protocol:Client status changed to Status.launched (was Status.ended)
+INFO:sc2.protocol:Client status changed to Status.quit (was Status.launched)
+INFO:sc2.sc2process:kill_switch: Process cleanup
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+INFO:sc2.protocol:Cannot receive: Connection already closed.
+INFO:sc2.sc2process:kill_switch: Process cleanup
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+
+
+## STDERR ##
+
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/hspark8312/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 24354 -displayMode 0 -dataDir /home/hspark8312/StarCraftII -tempDir /tmp/SC2_t_5xngl0'
+Starting up...
+Startup Phase 1 complete
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/hspark8312/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 16832 -displayMode 0 -dataDir /home/hspark8312/StarCraftII -tempDir /tmp/SC2_fz8u5nba'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:24354
+Startup Phase 3 complete. Ready for commands.
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:16832
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:51813 accepted
+ReadyHandler: 127.0.0.1:51813 ready
+Requesting to join a multiplayer game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface enabled
+Configure: score interface enabled
+Configure: render interface disabled
+ConnectHandler: Request from 127.0.0.1:51814 accepted
+ReadyHandler: 127.0.0.1:51814 ready
+Requesting to join a multiplayer game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface enabled
+Configure: score interface enabled
+Configure: render interface disabled
+Create game with map path: NCFellowship-2019_m1_v6.SC2Map
+Attempting to join a game with the map: NCFellowship-2019_m1_v6.SC2Map
+Game has started.
+Using default stable ids, none found at: /home/hspark8312/StarCraftII/stableid.json
+Game has started.
+Using default stable ids, none found at: /home/hspark8312/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Sending ResponseJoinGame
+RequestQuit command received.
+Closing Application...

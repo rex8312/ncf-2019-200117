@@ -1,0 +1,93 @@
+## STDOUT ##
+
+[[92mINFO[0m] SC2 4.9.0 용 패치 적용
+패치 sc2.ids.ability_id
+패치 sc2.game_state
+패치 sc2.bot_ai
+패치 sc2.client
+패치 sc2.controller
+패치 sc2.main
+INFO:sc2.protocol:Client status changed to Status.launched (was None)
+INFO:sc2.protocol:Client status changed to Status.launched (was None)
+INFO:sc2_patch.sc2_patch_490.controller:Creating new game
+INFO:sc2_patch.sc2_patch_490.controller:Map:     NCFellowship-2019_m1_v6
+INFO:sc2_patch.sc2_patch_490.controller:Players: Bot(Race.Terran, <bots.keai.inho_bot_final.ReaperBot object at 0x7f0a08b29f28>), Bot(Race.Terran, <bots.__examples__.nc_example_v6.drop_bot.DropBot object at 0x7f0a0b1bfb38>)
+INFO:sc2.protocol:Client status changed to Status.init_game (was Status.launched)
+INFO:sc2.protocol:Client status changed to Status.in_game (was None)
+INFO:root:Player 2 - Bot(Race.Terran, <bots.__examples__.nc_example_v6.drop_bot.DropBot object at 0x7f0a0b1bfb38>)
+TEST: 2, <bots.__examples__.nc_example_v6.drop_bot.DropBot object at 0x7f0a0b1bfb38>
+INFO:sc2.protocol:Client status changed to Status.in_game (was None)
+INFO:root:Player 1 - Bot(Race.Terran, <bots.keai.inho_bot_final.ReaperBot object at 0x7f0a08b29f28>)
+TEST: 1, <bots.keai.inho_bot_final.ReaperBot object at 0x7f0a08b29f28>
+INFO:sc2.protocol:Client status changed to Status.ended (was Status.in_game)
+INFO:sc2.protocol:Client status changed to Status.ended (was Status.in_game)
+INFO:root:Result for player 1 - Bot(Race.Terran, <bots.keai.inho_bot_final.ReaperBot object at 0x7f0a08b29f28>): Defeat
+INFO:root:Result for player 2 - Bot(Race.Terran, <bots.__examples__.nc_example_v6.drop_bot.DropBot object at 0x7f0a0b1bfb38>): Victory
+INFO:sc2.client:Saved replay to outs/2020-01-17T11-28-03/replays/keai-drop_bot/keai-drop_bot-3.SC2Replay
+INFO:sc2.protocol:Client status changed to Status.launched (was Status.ended)
+INFO:sc2.protocol:Client status changed to Status.quit (was Status.launched)
+INFO:sc2.sc2process:kill_switch: Process cleanup
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+INFO:sc2.protocol:Cannot receive: Connection already closed.
+INFO:sc2.sc2process:kill_switch: Process cleanup
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+
+
+## STDERR ##
+
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/hspark8312/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 21495 -displayMode 0 -dataDir /home/hspark8312/StarCraftII -tempDir /tmp/SC2_jokldsfs'
+Starting up...
+Startup Phase 1 complete
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/hspark8312/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 20114 -displayMode 0 -dataDir /home/hspark8312/StarCraftII -tempDir /tmp/SC2_conr94r6'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:21495
+Startup Phase 3 complete. Ready for commands.
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:20114
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:60403 accepted
+ReadyHandler: 127.0.0.1:60403 ready
+Requesting to join a multiplayer game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface enabled
+Configure: score interface enabled
+Configure: render interface disabled
+ConnectHandler: Request from 127.0.0.1:60404 accepted
+ReadyHandler: 127.0.0.1:60404 ready
+Requesting to join a multiplayer game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface enabled
+Configure: score interface enabled
+Configure: render interface disabled
+Create game with map path: NCFellowship-2019_m1_v6.SC2Map
+Attempting to join a game with the map: NCFellowship-2019_m1_v6.SC2Map
+Game has started.
+Using default stable ids, none found at: /home/hspark8312/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Deferred error: 536936448 (0x20010000)
+Deferred error details: Bad profiling data. TimeMS: 5964430.000000 Conversion: 1.000000e-03
+Game has started.
+Using default stable ids, none found at: /home/hspark8312/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+RequestQuit command received.
+Closing Application...
+CloseHandler: 127.0.0.1:60404 disconnected
+Terminate action already called.

@@ -1,0 +1,92 @@
+## STDOUT ##
+
+[[92mINFO[0m] SC2 4.9.0 용 패치 적용
+패치 sc2.ids.ability_id
+패치 sc2.game_state
+패치 sc2.bot_ai
+패치 sc2.client
+패치 sc2.controller
+패치 sc2.main
+INFO:sc2.protocol:Client status changed to Status.launched (was None)
+INFO:sc2.protocol:Client status changed to Status.launched (was None)
+INFO:sc2_patch.sc2_patch_490.controller:Creating new game
+INFO:sc2_patch.sc2_patch_490.controller:Map:     NCFellowship-2019_m1_v6
+INFO:sc2_patch.sc2_patch_490.controller:Players: Bot(Race.Terran, <bots.npc.osjbot.OsjBot object at 0x7faf53704198>), Bot(Race.Terran, <bots.kinai.test_bot.TestBot object at 0x7faf53704b00>)
+INFO:sc2.protocol:Client status changed to Status.init_game (was Status.launched)
+INFO:sc2.protocol:Client status changed to Status.in_game (was None)
+INFO:root:Player 2 - Bot(Race.Terran, <bots.kinai.test_bot.TestBot object at 0x7faf53704b00>)
+TEST: 2, <bots.kinai.test_bot.TestBot object at 0x7faf53704b00>
+INFO:sc2.protocol:Client status changed to Status.in_game (was None)
+INFO:root:Player 1 - Bot(Race.Terran, <bots.npc.osjbot.OsjBot object at 0x7faf53704198>)
+TEST: 1, <bots.npc.osjbot.OsjBot object at 0x7faf53704198>
+INFO:sc2.protocol:Client status changed to Status.ended (was Status.in_game)
+INFO:root:Result for player 2 - Bot(Race.Terran, <bots.kinai.test_bot.TestBot object at 0x7faf53704b00>): Defeat
+INFO:sc2.protocol:Client status changed to Status.ended (was Status.in_game)
+INFO:root:Result for player 1 - Bot(Race.Terran, <bots.npc.osjbot.OsjBot object at 0x7faf53704198>): Victory
+INFO:sc2.client:Saved replay to outs/2020-01-17T11-28-03/replays/npc-kinai/npc-kinai-0.SC2Replay
+INFO:sc2.protocol:Client status changed to Status.launched (was Status.ended)
+INFO:sc2.protocol:Client status changed to Status.quit (was Status.launched)
+INFO:sc2.sc2process:kill_switch: Process cleanup
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+INFO:sc2.protocol:Client status changed to Status.launched (was Status.ended)
+INFO:sc2.protocol:Cannot receive: Connection already closed.
+INFO:sc2.sc2process:kill_switch: Process cleanup
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+INFO:sc2.sc2process:Cleaning up...
+INFO:sc2.sc2process:Cleanup complete
+
+
+## STDERR ##
+
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/hspark8312/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 21004 -displayMode 0 -dataDir /home/hspark8312/StarCraftII -tempDir /tmp/SC2_otfqk4jd'
+Starting up...
+Startup Phase 1 complete
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/hspark8312/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 23592 -displayMode 0 -dataDir /home/hspark8312/StarCraftII -tempDir /tmp/SC2_4ofwqwpo'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:21004
+Startup Phase 3 complete. Ready for commands.
+Startup Phase 2 complete
+Creating stub renderer...
+ConnectHandler: Request from 127.0.0.1:50065 accepted
+ReadyHandler: 127.0.0.1:50065 ready
+Listening on: 127.0.0.1:23592
+Startup Phase 3 complete. Ready for commands.
+Requesting to join a multiplayer game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface enabled
+Configure: score interface enabled
+Configure: render interface disabled
+ConnectHandler: Request from 127.0.0.1:50066 accepted
+ReadyHandler: 127.0.0.1:50066 ready
+Requesting to join a multiplayer game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface enabled
+Configure: score interface enabled
+Configure: render interface disabled
+Create game with map path: NCFellowship-2019_m1_v6.SC2Map
+Attempting to join a game with the map: NCFellowship-2019_m1_v6.SC2Map
+Game has started.
+Using default stable ids, none found at: /home/hspark8312/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Game has started.
+Using default stable ids, none found at: /home/hspark8312/StarCraftII/stableid.json
+Sending ResponseJoinGame
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+RequestQuit command received.
+Closing Application...
+/mnt/d/sc2minigame-eval-2020-01-09/bots/kinai/test_bot.py:644: RuntimeWarning: coroutine 'Debuging.normal_step' was never awaited
+  self.normal_step(unit, units)
